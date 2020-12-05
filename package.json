@@ -1,0 +1,26 @@
+{
+  "name": "belajar-node",
+  "version": "1.0.0",
+  "description": "This repository is my crash course learning progress about Node.js for beginner.",
+  "main": "lesson1-files.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npmitaart/belajar-Node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npmitaart/belajar-Node.js/issues"
+  },
+  "homepage": "https://github.com/npmitaart/belajar-Node.js#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
