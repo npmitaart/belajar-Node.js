@@ -1,5 +1,6 @@
 const http = require('http');
 const fs = require('fs');
+const _ = require('lodash');
 
 // create a server
 // req -> url
@@ -9,7 +10,7 @@ const server = http.createServer((req, res) => {
     // console.log(req);
 
     // cek url and method
-    console.log(req.url, req.method);
+    // console.log(req.url, req.method);
 
     // // set header content type
     // res.setHeader('Content-Type', 'text/html');
@@ -18,9 +19,18 @@ const server = http.createServer((req, res) => {
     // res.write('<p>hello world</p>');
     // res.end();
 
+    // lodash
+    const num = _.random(0, 20);
+    console.log(num);
+
+    const greet = _.once(() => {
+        console.log('hello');
+    });
+
+    greet();
+
     // ini yang versi benar, ngambil html dari folder terpisah
     res.setHeader('Content-Type', 'text/html');
-
 
     let path = './lesson2-views/';
     switch(req.url){
